@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "YoutubeFloat",
+  "description": "This extension allows users to experience youtube like on the android app",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "web_accessible_resources": ["extension.js"]
+}
